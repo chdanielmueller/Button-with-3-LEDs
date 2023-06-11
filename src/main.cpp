@@ -49,7 +49,7 @@ void setup() {
   digitalWrite(greenLedPin, HIGH);
   digitalWrite(redLedPin, HIGH);
 
-  pinMode(buttonPin, INPUT);
+  pinMode(buttonPin, INPUT_PULLDOWN);
   threads.addThread(buttonThread);
 }
 
